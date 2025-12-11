@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Address_rosolver.v" \
+"../../../../../Barrett_reduction.v" \
+"../../../../../Buffer_reggisters.v" \
+"../../../../../NTT_TOP.v" \
+"../../../../../OP_TSET_sca.v" \
+"../../../../../PRNG.v" \
+"../../../../../Twiddle Factor Pre-processing Unit.v" \
+"../../../../../Butterfly_sca.v" \
+"../../../../../delay.v" \
+"../../../../../dual_port_ram.v" \
+"../../../../../dual_port_rom.v" \
+"../../../../../mod_unit.v" \
+"../../../../../op_test_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

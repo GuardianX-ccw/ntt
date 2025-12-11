@@ -1,0 +1,885 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 11 10:26:49 2025
+# Process ID: 24648
+# Current directory: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.runs/synth_1
+# Command line: vivado.exe -log operation_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source operation_module.tcl
+# Log file: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.runs/synth_1/operation_module.vds
+# Journal file: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source operation_module.tcl -notrace
+Command: synth_design -top operation_module -part xc7a200tfbg484-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20012 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 431.230 ; gain = 98.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'operation_module' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:19]
+	Parameter WIDTH bound to: 23 - type: integer 
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter FORWARD_NTT_MODE bound to: 3'b000 
+	Parameter INVERSE_NTT_MODE bound to: 3'b001 
+INFO: [Synth 8-6157] synthesizing module 'address_unit' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:3]
+	Parameter N2 bound to: 512 - type: integer 
+	Parameter FORWARD_NTT_MODE bound to: 3'b000 
+	Parameter INVERSE_NTT_MODE bound to: 3'b001 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:67]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'address_unit' (1#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_rom' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v:28]
+	Parameter WIDTH bound to: 24 - type: integer 
+	Parameter LENGTH bound to: 256 - type: integer 
+	Parameter INIT_FILE bound to: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/zetas.txt - type: string 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v:32]
+INFO: [Synth 8-3876] $readmem data file 'D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/zetas.txt' is read successfully [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_rom' (2#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v:28]
+INFO: [Synth 8-6157] synthesizing module 'cofe_regs' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Buffer_reggisters.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter Q bound to: 23'b11111111110000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'cofe_regs' (3#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Buffer_reggisters.v:3]
+INFO: [Synth 8-6157] synthesizing module 'twiddle_regs' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:5]
+	Parameter WIDTH bound to: 23 - type: integer 
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter FORWARD_NTT_MODE bound to: 3'b000 
+	Parameter INVERSE_NTT_MODE bound to: 3'b001 
+INFO: [Synth 8-6157] synthesizing module 'x_4' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:34]
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'x_4' (4#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:34]
+WARNING: [Synth 8-6014] Unused sequential element S00xDP_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element S10xDP_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element S20xDP_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element S30xDP_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element S40xDP_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element S50xDP_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'twiddle_regs' (5#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v:5]
+INFO: [Synth 8-6157] synthesizing module 'butterfly2x2_csa' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/butterfly_sca.v:6]
+	Parameter WIDTH bound to: 23 - type: integer 
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter FORWARD_NTT_MODE bound to: 3'b000 
+	Parameter INVERSE_NTT_MODE bound to: 3'b001 
+INFO: [Synth 8-6157] synthesizing module 'mod_mult' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:44]
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:52]
+INFO: [Synth 8-6157] synthesizing module 'mult_stage' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mult_stage' (6#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:69]
+INFO: [Synth 8-6157] synthesizing module 'Barrett' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:152]
+INFO: [Synth 8-6157] synthesizing module 'DecoupledStage' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'DecoupledStage' (7#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:26]
+INFO: [Synth 8-6157] synthesizing module 'DecoupledStage_1' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'DecoupledStage_1' (8#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:65]
+INFO: [Synth 8-6157] synthesizing module 'DecoupledStage_2' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'DecoupledStage_2' (9#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'Barrett' (10#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'mod_mult' (11#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:44]
+INFO: [Synth 8-6157] synthesizing module 'mod_add' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:3]
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mod_add' (12#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mod_sub' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:19]
+	Parameter Q bound to: 23'b11111111110000000000001 
+	Parameter WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mod_sub' (13#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly2x2_csa' (14#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/butterfly_sca.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:154]
+WARNING: [Synth 8-6014] Unused sequential element doa1_sr_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:123]
+WARNING: [Synth 8-6014] Unused sequential element valido_bf_sr_reg was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:301]
+WARNING: [Synth 8-6014] Unused sequential element addrb1_sr_reg[16] was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:307]
+WARNING: [Synth 8-6014] Unused sequential element addrb1_sr_reg[15] was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:307]
+WARNING: [Synth 8-6014] Unused sequential element date_sr_reg[3] was removed.  [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:311]
+WARNING: [Synth 8-3936] Found unconnected internal register 'done_sr_reg' and it is trimmed from '18' to '17' bits. [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:299]
+INFO: [Synth 8-6155] done synthesizing module 'operation_module' (15#1) [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:19]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[131]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[98]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[65]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[32]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 488.004 ; gain = 155.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 488.004 ; gain = 155.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 488.004 ; gain = 155.770
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-3
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:71]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:72]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:74]
+INFO: [Synth 8-5544] ROM "j_inv" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "j_inv_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "round" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5547] Trying to map ROM "ram" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "ram" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5544] ROM "data_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'done_sr_reg' and it is trimmed from '17' to '16' bits. [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:299]
+WARNING: [Synth 8-327] inferring latch for variable 'j_inv_1_reg' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:168]
+WARNING: [Synth 8-327] inferring latch for variable 'j_inv_reg' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:156]
+WARNING: [Synth 8-327] inferring latch for variable 'data_o_reg' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/butterfly_sca.v:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 509.738 ; gain = 177.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 6     
+	   3 Input     28 Bit       Adders := 6     
+	   3 Input     24 Bit       Adders := 10    
+	   2 Input     24 Bit       Adders := 14    
+	   2 Input     23 Bit       Adders := 22    
+	   4 Input     23 Bit       Adders := 6     
+	   4 Input     11 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 6     
+	   4 Input      9 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              138 Bit    Registers := 1     
+	               92 Bit    Registers := 3     
+	               46 Bit    Registers := 6     
+	               32 Bit    Registers := 22    
+	               24 Bit    Registers := 50    
+	               23 Bit    Registers := 26    
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 20    
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 22    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 27    
++---ROMs : 
+	                              ROMs := 6     
++---Muxes : 
+	   2 Input    138 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     96 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 15    
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input     23 Bit        Muxes := 62    
+	   2 Input      9 Bit        Muxes := 38    
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module operation_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               92 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 15    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 15    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module address_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 6     
+	   4 Input      9 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 6     
+	                2 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 38    
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module dual_port_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 2     
+Module cofe_regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 15    
+Module x_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 2     
+Module twiddle_regs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 6     
++---Registers : 
+	               23 Bit    Registers := 18    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    138 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 12    
+Module mult_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DecoupledStage 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module DecoupledStage_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
+Module DecoupledStage_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Barrett 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
+	   3 Input     28 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   4 Input     23 Bit       Adders := 1     
+	   4 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module mod_mult 
+Detailed RTL Component Info : 
++---Registers : 
+	               46 Bit    Registers := 1     
+Module mod_add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+Module mod_sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+Module butterfly2x2_csa 
+Detailed RTL Component Info : 
++---Registers : 
+	              138 Bit    Registers := 1     
+	               23 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 46    
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+DSP Report: Generating DSP mult_stage/mult_res0_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_stage/mult_res0_reg is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: operator mult_stage/mult_res00 is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: Generating DSP mult_stage/add_res0, operation Mode is: C+(A*B)'.
+DSP Report: register mult_stage/mult_res1_reg is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/mult_res10 is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/add_res0 is absorbed into DSP mult_stage/add_res0.
+DSP Report: Generating DSP mult_stage/mult_res0_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_stage/mult_res0_reg is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: operator mult_stage/mult_res00 is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: Generating DSP mult_stage/add_res0, operation Mode is: C+(A*B)'.
+DSP Report: register mult_stage/mult_res1_reg is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/mult_res10 is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/add_res0 is absorbed into DSP mult_stage/add_res0.
+DSP Report: Generating DSP mult_stage/mult_res0_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_stage/mult_res0_reg is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: operator mult_stage/mult_res00 is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: Generating DSP mult_stage/add_res0, operation Mode is: C+(A*B)'.
+DSP Report: register mult_stage/mult_res1_reg is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/mult_res10 is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/add_res0 is absorbed into DSP mult_stage/add_res0.
+DSP Report: Generating DSP mult_stage/mult_res0_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_stage/mult_res0_reg is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: operator mult_stage/mult_res00 is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: Generating DSP mult_stage/add_res0, operation Mode is: C+(A*B)'.
+DSP Report: register mult_stage/mult_res1_reg is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/mult_res10 is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/add_res0 is absorbed into DSP mult_stage/add_res0.
+DSP Report: Generating DSP mult_stage/mult_res0_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_stage/mult_res0_reg is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: operator mult_stage/mult_res00 is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: Generating DSP mult_stage/add_res0, operation Mode is: C+(A*B)'.
+DSP Report: register mult_stage/mult_res1_reg is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/mult_res10 is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/add_res0 is absorbed into DSP mult_stage/add_res0.
+DSP Report: Generating DSP mult_stage/mult_res0_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_stage/mult_res0_reg is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: operator mult_stage/mult_res00 is absorbed into DSP mult_stage/mult_res0_reg.
+DSP Report: Generating DSP mult_stage/add_res0, operation Mode is: C+(A*B)'.
+DSP Report: register mult_stage/mult_res1_reg is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/mult_res10 is absorbed into DSP mult_stage/add_res0.
+DSP Report: operator mult_stage/add_res0 is absorbed into DSP mult_stage/add_res0.
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_2_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_3_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_4_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[8]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[7]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[6]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[5]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[4]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[3]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[2]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[1]
+WARNING: [Synth 8-3331] design operation_module has unconnected port zeta_new_5_delay[0]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[131]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[98]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[65]
+WARNING: [Synth 8-3331] design operation_module has unconnected port doa1[32]
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch ADDR/\j_inv_1_reg[7]  is always disabled
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ADDR/\j_inv_1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ADDR/\j_inv_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult1/REDUCER1/stg0/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult4/REDUCER1/stg0/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult2/REDUCER1/stg0/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult5/REDUCER1/stg0/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult3/REDUCER1/stg0/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult0/REDUCER1/stg0/valid_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (butterfly2x2_csa/\data_o_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (butterfly2x2_csa/\data_o_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (butterfly2x2_csa/\data_o_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (butterfly2x2_csa/\data_o_reg[95] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult2/REDUCER1/stg1/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult4/REDUCER1/stg1/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult0/REDUCER1/stg1/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult1/REDUCER1/stg1/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult3/REDUCER1/stg1/valid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (butterfly2x2_csa/\mod_mult5/REDUCER1/stg1/valid_reg )
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[7]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[6]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[5]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[4]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[3]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[2]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[1]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_1_reg[0]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[7]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[6]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[5]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[4]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[3]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[2]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[1]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (j_inv_reg[0]) is unused and will be removed from module address_unit.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[95]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[94]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[93]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[92]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[91]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[90]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[89]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[88]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[87]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[86]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[85]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[84]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[83]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[82]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[81]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[80]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[79]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[78]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[77]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[76]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[75]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[74]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[73]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[72]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[71]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[70]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[69]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[68]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[67]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[66]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[65]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[64]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[63]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[62]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[61]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[60]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[59]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[58]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[57]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[56]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[55]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[54]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[53]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[52]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[51]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[50]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[49]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[48]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[47]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[46]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[45]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[44]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[43]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[42]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[41]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[40]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[39]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[38]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[37]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[36]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[35]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[34]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[33]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[32]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[31]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[30]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[29]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[28]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[27]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[26]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[25]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[24]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[23]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[22]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[21]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[20]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[19]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[18]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[17]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[16]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[15]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[14]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[13]) is unused and will be removed from module butterfly2x2_csa.
+WARNING: [Synth 8-3332] Sequential element (data_o_reg[12]) is unused and will be removed from module butterfly2x2_csa.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_stage  | (A*B)'      | 23     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_stage  | C+(A*B)'    | 23     | 9      | 23     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|mult_stage  | (A*B)'      | 23     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_stage  | C+(A*B)'    | 23     | 9      | 23     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|mult_stage  | (A*B)'      | 23     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_stage  | C+(A*B)'    | 23     | 9      | 23     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|mult_stage  | (A*B)'      | 23     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_stage  | C+(A*B)'    | 23     | 9      | 23     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|mult_stage  | (A*B)'      | 23     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_stage  | C+(A*B)'    | 23     | 9      | 23     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|mult_stage  | (A*B)'      | 23     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_stage  | C+(A*B)'    | 23     | 9      | 23     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM1i_0/TWIDDLE_RAM1/doa_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM1i_0/TWIDDLE_RAM1/doa_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM1i_1/TWIDDLE_RAM1/dob_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM1i_1/TWIDDLE_RAM1/dob_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM2i_2/TWIDDLE_RAM2/doa_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM2i_2/TWIDDLE_RAM2/doa_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM2i_3/TWIDDLE_RAM2/dob_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM2i_3/TWIDDLE_RAM2/dob_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM3i_4/TWIDDLE_RAM3/doa_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM3i_4/TWIDDLE_RAM3/doa_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM3i_5/TWIDDLE_RAM3/dob_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TWIDDLE_RAM3i_5/TWIDDLE_RAM3/dob_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][8]' (FD) to 'zeta_new_sr_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][0]' (FD) to 'zeta_new_sr_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][1]' (FD) to 'zeta_new_sr_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][2]' (FD) to 'zeta_new_sr_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][3]' (FD) to 'zeta_new_sr_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][4]' (FD) to 'zeta_new_sr_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][5]' (FD) to 'zeta_new_sr_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][6]' (FD) to 'zeta_new_sr_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[0][7]' (FD) to 'zeta_new_sr_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][8]' (FD) to 'zeta_new_sr_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][0]' (FD) to 'zeta_new_sr_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][1]' (FD) to 'zeta_new_sr_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][2]' (FD) to 'zeta_new_sr_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][3]' (FD) to 'zeta_new_sr_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][4]' (FD) to 'zeta_new_sr_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][5]' (FD) to 'zeta_new_sr_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][6]' (FD) to 'zeta_new_sr_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[1][7]' (FD) to 'zeta_new_sr_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][8]' (FD) to 'zeta_new_sr_reg[2][8]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][0]' (FD) to 'zeta_new_sr_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][1]' (FD) to 'zeta_new_sr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][2]' (FD) to 'zeta_new_sr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][3]' (FD) to 'zeta_new_sr_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][4]' (FD) to 'zeta_new_sr_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][5]' (FD) to 'zeta_new_sr_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][6]' (FD) to 'zeta_new_sr_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[2][7]' (FD) to 'zeta_new_sr_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][8]' (FD) to 'zeta_new_sr_reg[3][8]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][0]' (FD) to 'zeta_new_sr_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][1]' (FD) to 'zeta_new_sr_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][2]' (FD) to 'zeta_new_sr_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][3]' (FD) to 'zeta_new_sr_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][4]' (FD) to 'zeta_new_sr_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][5]' (FD) to 'zeta_new_sr_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][6]' (FD) to 'zeta_new_sr_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'ADDR/zeta_new_sr_reg[3][7]' (FD) to 'zeta_new_sr_reg[3][7]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|operation_module | ADDR/floor_sr_reg[4][1]  | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|operation_module | ADDR/cnt_64_sr_reg[4][5] | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|operation_module | done_sr_reg[15]          | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|operation_module | addrb1_sr_reg[14][5]     | 15     | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|operation_module | zeta_new_sr_reg[14][8]   | 11     | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|operation_module | validi_bf_sr_reg[7]      | 8      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|operation_module | date_sr_reg[1][91]       | 3      | 23    | NO           | NO                 | YES               | 23     | 0       | 
+|operation_module | zeta_new_sr_reg[3][8]    | 4      | 9     | NO           | YES                | YES               | 9      | 0       | 
++-----------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   342|
+|3     |DSP48E1  |    12|
+|4     |LUT1     |   120|
+|5     |LUT2     |   935|
+|6     |LUT3     |   713|
+|7     |LUT4     |   203|
+|8     |LUT5     |    47|
+|9     |LUT6     |   104|
+|10    |RAMB18E1 |     6|
+|11    |SRL16E   |    57|
+|12    |FDRE     |  1833|
+|13    |IBUF     |   140|
+|14    |OBUF     |   146|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------+--------------------+------+
+|      |Instance           |Module              |Cells |
++------+-------------------+--------------------+------+
+|1     |top                |                    |  4659|
+|2     |  ADDR             |address_unit        |   202|
+|3     |  TWIDDLE_RAM1     |dual_port_rom       |    26|
+|4     |  TWIDDLE_RAM2     |dual_port_rom_0     |    28|
+|5     |  TWIDDLE_RAM3     |dual_port_rom_1     |    26|
+|6     |  butterfly2x2_csa |butterfly2x2_csa    |  2683|
+|7     |    mod_add1       |mod_add             |    96|
+|8     |    mod_add2       |mod_add_2           |    95|
+|9     |    mod_add3       |mod_add_3           |    89|
+|10    |    mod_add4       |mod_add_4           |    89|
+|11    |    mod_mult0      |mod_mult            |   345|
+|12    |      REDUCER1     |Barrett_33          |   294|
+|13    |        stg0       |DecoupledStage_35   |    97|
+|14    |        stg1       |DecoupledStage_1_36 |   111|
+|15    |        stg2       |DecoupledStage_2_37 |    29|
+|16    |      mult_stage   |mult_stage_34       |     2|
+|17    |    mod_mult1      |mod_mult_5          |   362|
+|18    |      REDUCER1     |Barrett_28          |   311|
+|19    |        stg0       |DecoupledStage_30   |    97|
+|20    |        stg1       |DecoupledStage_1_31 |   111|
+|21    |        stg2       |DecoupledStage_2_32 |    46|
+|22    |      mult_stage   |mult_stage_29       |     2|
+|23    |    mod_mult2      |mod_mult_6          |   339|
+|24    |      REDUCER1     |Barrett_23          |   288|
+|25    |        stg0       |DecoupledStage_25   |    97|
+|26    |        stg1       |DecoupledStage_1_26 |   111|
+|27    |        stg2       |DecoupledStage_2_27 |    23|
+|28    |      mult_stage   |mult_stage_24       |     2|
+|29    |    mod_mult3      |mod_mult_7          |   362|
+|30    |      REDUCER1     |Barrett_18          |   311|
+|31    |        stg0       |DecoupledStage_20   |    97|
+|32    |        stg1       |DecoupledStage_1_21 |   111|
+|33    |        stg2       |DecoupledStage_2_22 |    46|
+|34    |      mult_stage   |mult_stage_19       |     2|
+|35    |    mod_mult4      |mod_mult_8          |   339|
+|36    |      REDUCER1     |Barrett_13          |   288|
+|37    |        stg0       |DecoupledStage_15   |    97|
+|38    |        stg1       |DecoupledStage_1_16 |   111|
+|39    |        stg2       |DecoupledStage_2_17 |    23|
+|40    |      mult_stage   |mult_stage_14       |     2|
+|41    |    mod_mult5      |mod_mult_9          |   339|
+|42    |      REDUCER1     |Barrett             |   288|
+|43    |        stg0       |DecoupledStage      |    97|
+|44    |        stg1       |DecoupledStage_1    |   111|
+|45    |        stg2       |DecoupledStage_2    |    23|
+|46    |      mult_stage   |mult_stage          |     2|
+|47    |    mod_sub1       |mod_sub             |    54|
+|48    |    mod_sub2       |mod_sub_10          |    71|
+|49    |    mod_sub3       |mod_sub_11          |    48|
+|50    |    mod_sub4       |mod_sub_12          |    48|
+|51    |  cofe_regs        |cofe_regs           |  1069|
+|52    |  twiddle_regs     |twiddle_regs        |   162|
++------+-------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 693.055 ; gain = 360.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 222 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 693.055 ; gain = 360.820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 693.055 ; gain = 360.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 210 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 801.988 ; gain = 482.770
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 801.988 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.runs/synth_1/operation_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file operation_module_utilization_synth.rpt -pb operation_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 11 10:27:08 2025...

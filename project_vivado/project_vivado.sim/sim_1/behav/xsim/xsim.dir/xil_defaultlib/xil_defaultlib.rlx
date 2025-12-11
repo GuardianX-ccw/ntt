@@ -1,0 +1,18 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v,1765007288,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v,,address_unit,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v,1764814632,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Buffer_reggisters.v,,Barrett;DecoupledStage;DecoupledStage_1;DecoupledStage_2,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Buffer_reggisters.v,1764814813,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v,,cofe_regs,,,,,,,,
+,,,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/delay.v,,butterfly2x2_csa,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v,1765420174,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v,,operation_module,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v,1764915517,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/PRNG.v,,OP_TEST_sca,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/PRNG.v,1764815098,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v,,PRNG,,,,,,,,
+,,,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v,,twiddle_regs,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/delay.v,1753580905,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_ram.v,,delay,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_ram.v,1764655652,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v,,dual_port_ram,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v,1753581157,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v,,dual_port_rom,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v,1753845204,verilog,,D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/op_test_tb.v,,mod_add;mod_mult;mod_sub;mult_stage;x_4,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/op_test_tb.v,1764811567,verilog,,,,op_test_tb,,,,,,,,
+D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

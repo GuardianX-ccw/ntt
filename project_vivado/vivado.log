@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 11 10:50:17 2025
+# Process ID: 22196
+# Current directory: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18300 D:\Date\work\Dlilithium\NTT_sca\NTT_INTT_sca\project_vivado\project_vivado.xpr
+# Log file: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/vivado.log
+# Journal file: D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/app/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 800.094 ; gain = 155.402
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'op_test_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj op_test_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module address_unit
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:70]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:71]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:72]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:74]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:78]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:103]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:112]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:113]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:114]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:115]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:155]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:157]
+WARNING: [VRFC 10-3380] identifier 'cnt_64_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:158]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:159]
+WARNING: [VRFC 10-3380] identifier 'cnt_64_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:160]
+WARNING: [VRFC 10-3380] identifier 'cnt_64_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:162]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:167]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:169]
+WARNING: [VRFC 10-3380] identifier 'cnt_64_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:170]
+WARNING: [VRFC 10-3380] identifier 'floor_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:171]
+WARNING: [VRFC 10-3380] identifier 'cnt_64_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:172]
+WARNING: [VRFC 10-3380] identifier 'cnt_64_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Address_rosolver.v:174]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Barrett_reduction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecoupledStage
+INFO: [VRFC 10-311] analyzing module DecoupledStage_1
+INFO: [VRFC 10-311] analyzing module DecoupledStage_2
+INFO: [VRFC 10-311] analyzing module Barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Buffer_reggisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cofe_regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module operation_module
+WARNING: [VRFC 10-3380] identifier 'doa1_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:123]
+WARNING: [VRFC 10-3380] identifier 'doa1_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:124]
+WARNING: [VRFC 10-3380] identifier 'doa1_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:125]
+WARNING: [VRFC 10-3380] identifier 'doa1_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:126]
+WARNING: [VRFC 10-3380] identifier 'zeta_new_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:150]
+WARNING: [VRFC 10-3380] identifier 'date_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:158]
+WARNING: [VRFC 10-3380] identifier 'validi_bf_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:159]
+WARNING: [VRFC 10-3380] identifier 'addrb1_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:162]
+WARNING: [VRFC 10-3380] identifier 'done_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:165]
+WARNING: [VRFC 10-3380] identifier 'date_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:171]
+WARNING: [VRFC 10-3380] identifier 'validi_bf_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:172]
+WARNING: [VRFC 10-3380] identifier 'addrb1_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:175]
+WARNING: [VRFC 10-3380] identifier 'valido_bf_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:176]
+WARNING: [VRFC 10-3380] identifier 'done_sr' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:178]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OP_TEST_sca
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/PRNG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRNG
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Twiddle Factor Pre-processing Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twiddle_regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly2x2_csa
+WARNING: [VRFC 10-3380] identifier 'cnt' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:36]
+WARNING: [VRFC 10-3380] identifier 'cnt' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:57]
+WARNING: [VRFC 10-3380] identifier 'tw1_fifo0' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:58]
+WARNING: [VRFC 10-3380] identifier 'zetai_1' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:59]
+WARNING: [VRFC 10-3380] identifier 'zetai_1' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:60]
+WARNING: [VRFC 10-3380] identifier 'tw1_fifo1' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:61]
+WARNING: [VRFC 10-3380] identifier 'zetai_1' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:62]
+WARNING: [VRFC 10-3380] identifier 'zetai_1' is used before its declaration [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/Butterfly_sca.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_port_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/dual_port_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_port_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_add
+INFO: [VRFC 10-311] analyzing module mod_sub
+INFO: [VRFC 10-311] analyzing module x_4
+INFO: [VRFC 10-311] analyzing module mod_mult
+INFO: [VRFC 10-311] analyzing module mult_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/op_test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_test_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 843.871 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/app/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 4594955d09824719987ef8510722b99c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot op_test_tb_behav xil_defaultlib.op_test_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 132 differs from formal bit length 136 for port 'in' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/op_test_tb.v:23]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v:31]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'enb' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v:32]
+WARNING: [VRFC 10-3091] actual bit length 136 differs from formal bit length 16 for port 'seed' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v:84]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 9 for port 'zeta_new_1' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/OP_TSET_sca.v:140]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:106]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/NTT_TOP.v:110]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'reset' [D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/mod_unit.v:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dual_port_ram(WIDTH=132,LENGTH=6...
+Compiling module xil_defaultlib.PRNG
+Compiling module xil_defaultlib.cofe_regs(WIDTH=9)
+Compiling module xil_defaultlib.delay(N_CYCLES=2,BIT_WIDTH=9)
+Compiling module xil_defaultlib.delay(N_CYCLES=13,BIT_WIDTH=9)
+Compiling module xil_defaultlib.address_unit
+Compiling module xil_defaultlib.dual_port_rom(WIDTH=32'b011000,L...
+Compiling module xil_defaultlib.cofe_regs(WIDTH=32)
+Compiling module xil_defaultlib.x_4(WIDTH=32'b010111)
+Compiling module xil_defaultlib.twiddle_regs(WIDTH=32'b010111)
+Compiling module xil_defaultlib.mult_stage
+Compiling module xil_defaultlib.DecoupledStage
+Compiling module xil_defaultlib.DecoupledStage_1
+Compiling module xil_defaultlib.DecoupledStage_2
+Compiling module xil_defaultlib.Barrett
+Compiling module xil_defaultlib.mod_mult(WIDTH=32'b010111)
+Compiling module xil_defaultlib.mod_add(WIDTH=32'b010111)
+Compiling module xil_defaultlib.mod_sub(WIDTH=32'b010111)
+Compiling module xil_defaultlib.butterfly2x2_csa(WIDTH=32'b01011...
+Compiling module xil_defaultlib.operation_module(WIDTH=32'b01011...
+Compiling module xil_defaultlib.OP_TEST_sca
+Compiling module xil_defaultlib.op_test_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot op_test_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/project_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "op_test_tb_behav -key {Behavioral:sim_1:Functional:op_test_tb} -tclbatch {op_test_tb.tcl} -view {D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/op_test_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/Date/work/Dlilithium/NTT_sca/NTT_INTT_sca/project_vivado/op_test_tb_behav.wcfg
+source op_test_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'op_test_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.500 ; gain = 165.629
+run all
