@@ -7,8 +7,6 @@ This design proposes a unified local mask Radix-4 NTT/INTT structure, which incl
 ├── seed.txt                 # Test vector (coefficient).\
 ├── zetas.txt                # Twiddle factor.\
 ├── NTT_TOP.v                # Unified NTT/INTT architecture Top Level.\
-├── OP_TSET_sca.v            # This module is mainly responsible for data scheduling (testing the unified NTT/INTT architecture).\
-├── op_test_tb.v             # Testbench.\
 ├── PRNG.v                   # Generate pseudo-random numbers.\
 └── other                    # Other design documents with a unified NTT/INTT architecture.
 
